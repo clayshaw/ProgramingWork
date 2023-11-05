@@ -8,5 +8,5 @@ int maximum(int x,int y,int z){
 int main(){
     int x,y,z;
     scanf("%d%d%d",&x,&y,&z);
-    printf("The maximun is : %d\n",maximum(x,y,z));
+    printf("The maximum is : %d\n",maximum(x,y,z));
 }
