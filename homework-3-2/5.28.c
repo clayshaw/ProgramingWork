@@ -2,7 +2,7 @@
 
 char toLower(char ch){
     if(ch < 'A' || ch>'Z') return '\0';
-    return ch-32;
+    return ch-('A'-'a');
 }
 
 int main(){

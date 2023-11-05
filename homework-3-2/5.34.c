@@ -2,7 +2,7 @@
 
 double pow(double base,int exponent){
     if(exponent<1){
-        return 1;
+        return 1.0;
     } else {
         return base * pow(base,exponent-1);
     }
