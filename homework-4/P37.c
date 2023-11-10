@@ -22,7 +22,7 @@ int main(){
     printf("Enter integer search key:\n");
     scanf("%d", &searchKey);
 
-    element - linearSearch(a,searchKey,SIZE);
+    element = linearSearch(a,searchKey,SIZE);
 
     if(element != -1) printf("Found value is element %d\n",element);
     else printf("Value not found\n");
