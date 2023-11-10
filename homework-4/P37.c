@@ -11,7 +11,6 @@ int linearSearch(const int *array,int key ,int size){
 
 int main(){
     int a[SIZE];
-    int x;
     int searchKey;
     int element;
 
