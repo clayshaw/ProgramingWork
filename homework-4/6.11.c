@@ -2,6 +2,12 @@
 #include<stdlib.h>
 #include<time.h>
 
+void swap(int *a,int *b){
+    int tmp = (*a);
+    (*a) = (*b);
+    (*b) = tmp;
+}
+
 
 int main(){
     srand(time(0));
@@ -16,9 +22,7 @@ int main(){
     for(int i=0;i<20;i++){
         for(int j=0;j<20-i-1;j++){
             if(arr[j] > arr[j+1]){
-                int tmp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = tmp;
+                swap(arr+j,arr+j+1);
             }
         }
     }
