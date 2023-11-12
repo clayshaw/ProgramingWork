@@ -5,11 +5,11 @@ void staticArrayInit(){
     static int array[3];
 
     printf("\nValue on entering staticArrayInit:\n");
-    for(int i=0;i<3;i++) printf("array[%d] = %d",i,array[i]);
+    for(int i=0;i<3;i++) printf("array[%d] = %d\n",i,array[i]);
 
     printf("\nValue on exiting staticArrayInit:\n");
     for(int i=0;i<3;i++){
-        printf("array[%d] = %d",i,array[i]+=5);
+        printf("array[%d] = %d\n",i,array[i]+=5);
     }
 }
 
@@ -17,11 +17,11 @@ void automaticArrayInit(){
     int array[3];
 
     printf("\nValue on entering staticArrayInit:\n");
-    for(int i=0;i<3;i++) printf("array[%d] = %d",i,array[i]);
+    for(int i=0;i<3;i++) printf("array[%d] = %d\n",i,array[i]);
 
     printf("\nValue on exiting staticArrayInit:\n");
     for(int i=0;i<3;i++){
-        printf("array[%d] = %d",i,array[i]+=5);
+        printf("array[%d] = %d\n",i,array[i]+=5);
     }
 }
 
