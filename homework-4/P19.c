@@ -2,7 +2,7 @@
 
 int main(){
     char str1[20];
-    char str2[] = "string literal";
+    char *str2 = (char*)"string literal";
 
     printf("Enter a string: ");
     scanf("%s",str1);
