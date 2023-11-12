@@ -12,10 +12,10 @@ int min(int a,int b){
 }
 
 int minimum(const int grade[][EXAMS],int row,int col){
-    int minv = INT_MIN;
+    int minV = INT_MIN;
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
-            minv = min(minv,grade[i][j]);
+            minV = min(minV,grade[i][j]);
         }
     }
 }
