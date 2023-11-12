@@ -12,12 +12,13 @@ int min(int a,int b){
 }
 
 int minimum(const int grade[][EXAMS],int row,int col){
-    int minV = INT_MIN;
+    int minV = INT_MAX;
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
             minV = min(minV,grade[i][j]);
         }
     }
+    return minV;
 }
 
 int maximum(const int grade[][EXAMS],int row,int col){
@@ -27,6 +28,7 @@ int maximum(const int grade[][EXAMS],int row,int col){
             maxV = max(maxV,grade[i][j]);
         }
     }
+    return maxV;
 }
 
 double average(const int grade[],int test){
@@ -40,11 +42,11 @@ double average(const int grade[],int test){
 }
 
 void printArray(const int grade[][EXAMS],int row,int col){
-    printf("%17s[0]  [1]  [2]  [3]"," ");
+    printf("%17s [0]  [1]  [2]  [3]"," ");
     for(int i=0;i<row;i++){
         printf("\nstudentGrade[%d] ",i);
         for(int j=0;j<col;j++){
-            printf("%.5d",grade[i][j]);
+            printf("%5d",grade[i][j]);
         }
     }
 }
