@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 void staticArrayInit(){
-    static int array[3];
+    static int array[3]={5,5,5};
 
     printf("\nValue on entering staticArrayInit:\n");
     for(int i=0;i<3;i++) printf("array[%d] = %d\n",i,array[i]);
