@@ -14,7 +14,7 @@ void staticArrayInit(){
 }
 
 void automaticArrayInit(){
-    int array[3];
+    int array[3]={0,0,0};
 
     printf("\nValue on entering staticArrayInit:\n");
     for(int i=0;i<3;i++) printf("array[%d] = %d\n",i,array[i]);
